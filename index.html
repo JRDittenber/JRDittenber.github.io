@@ -79,11 +79,29 @@
       </ul>
     </nav>
 
-   <main>
+  <style>
+  .profile-image {
+    width: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image.enlarged {
+    width: 100%;
+  }
+</style>
+
+<script>
+  function toggleImageSize() {
+    const profileImage = document.querySelector('.profile-image');
+    profileImage.classList.toggle('enlarged');
+  }
+</script>
+
+<main>
   <h1>J. Dittenber - Mathematician, Data Scientist and Educator</h1>
 
   <div style="text-align: center;">
-    <img class="profile-image" src="images/Screenshot%202023-02-16%20162903.jpg" alt="Profile Image" style="width: 50%;">
+    <img class="profile-image" src="images/Screenshot%202023-02-16%20162903.jpg" alt="Profile Image" onclick="toggleImageSize()">
   </div>
 
   <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="YOUR_LINKEDIN_USERNAME">
