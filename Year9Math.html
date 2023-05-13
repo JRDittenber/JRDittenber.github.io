@@ -6,7 +6,22 @@
   </head>
   <body>
     <h1>Year 9 Cambridge Checkpoint Mathematics Stage 9</h1>
+   <div>
+      <button onclick="confirmAction()"><strong>Quiz & Exam Solutions</button>
+    </div>
 
+    <script>
+    function confirmAction() {
+        var confirmation = confirm("This button should only be clicked AFTER the exam. Are you sure you want to proceed?");
+        if (confirmation == true) {
+            // The user clicked "OK"
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // This is the link to a Rick Roll video
+        } else {
+            // The user clicked "Cancel"
+            alert("Alright, please click the button AFTER the exam.");
+        }
+    }
+    </script>
 
 
 
