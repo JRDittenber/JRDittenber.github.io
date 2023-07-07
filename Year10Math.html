@@ -1,81 +1,50 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-  <style>
-    /* Apply styles to the header */
-    .header {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
-      font-family: Arial, sans-serif; /* Use Arial font */
-      font-size: 24px; /* Adjust the font size as needed */
-      text-align: center; /* Center align the text */
-      margin: 20px 0; /* Add margin to create some spacing */
-    }
-
- 
-    
-  </style>
-</head>
-<body>
-  <header class="header">
-    Time Management is Pain Management
-  </header>
-  <head>
     <title>Year 10 IGCSE Mathematics</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Apply styles to the header */
+      .header {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        font-family: Arial, sans-serif; /* Use Arial font */
+        font-size: 24px; /* Adjust the font size as needed */
+        text-align: center; /* Center align the text */
+        margin: 20px 0; /* Add margin to create some spacing */
+      }
+
+      @keyframes pulseAnimation {
+        0% { background-color: #4CAF50; }
+        50% { background-color: yellow; }
+        100% { background-color: #4CAF50; }
+      }
+
+      .animatedButton {
+        animation: pulseAnimation 2s infinite;
+      }
+    </style>
   </head>
   <body>
+    <header class="header">
+      Time Management is Pain Management
+    </header>
     <h1>Year 10 IGCSE Mathematics</h1>
 
+    <button onclick="confirmAction()" class="animatedButton"><strong>Download Year 10 Study Guide</strong></button>
 
-
-  <style>
- /* Define the animation */
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
+    <script>
+      function confirmAction() {
+        var confirmation = confirm("Good luck on your exam, you can do it!");
+        if (confirmation == true) {
+          // The user clicked "OK"
+          window.location.href = "https://github.com/JRDittenber/JRDittenber.github.io/raw/main/docs/Year%2010%20Study%20Guide%20.pdf";
+        } else {
+          // The user clicked "Cancel"
+          alert("Keep pushing forward! You've got this!");
         }
       }
-
-      /* Apply the animation to the button */
-      .attention-button {
-        animation: pulse 1s infinite;
-      }
-
-
-   
-  @keyframes pulseAnimation {
-    0% { background-color: #4CAF50; }
-    50% { background-color: yellow; }
-    100% { background-color: #4CAF50; }
-  }
-
-  .animatedButton {
-    animation: pulseAnimation 2s infinite;
-  }
-</style>
-
-<button onclick="confirmAction()" class="animatedButton"><strong>Download Year 10 Study Guide</strong></button>
-
-<script>
-  function confirmAction() {
-    var confirmation = confirm("Good luck on your exam, you can do it!");
-    if (confirmation == true) {
-      // The user clicked "OK"
-      window.location.href = "https://github.com/JRDittenber/JRDittenber.github.io/raw/main/docs/Year%2010%20Study%20Guide%20.pdf";
-    } else {
-      // The user clicked "Cancel"
-      alert("Keep pushing forward! You've got this!");
-    }
-  }
-</script>
- 
- <div>
+    </script>
+  </body>
+</html>
 
 
   
