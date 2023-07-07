@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <style>
-    /* Apply styles to the header */
-    .header {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
-      font-family: Arial, sans-serif; /* Use Arial font */
-      font-size: 24px; /* Adjust the font size as needed */
-      text-align: center; /* Center align the text */
-      margin: 20px 0; /* Add margin to create some spacing */
-    }
-  </style>
-</head>
-<body>
-  <header class="header">
-    Time Management is Pain Management
-  </header>
-  <head>
-    <title>Year 9 Cambridge Checkpoint Science Stage 9</title>
+    <title>Year 8 Cambridge Checkpoint Science Stage 8</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+      /* Apply styles to the header */
+      .header {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        font-family: Arial, sans-serif; /* Use Arial font */
+        font-size: 24px; /* Adjust the font size as needed */
+        text-align: center; /* Center align the text */
+        margin: 20px 0; /* Add margin to create some spacing */
+      }
+
+      @keyframes pulseAnimation {
+        0%, 100% {
+          background-color: #4CAF50;
+          transform: scale(1);
+        }
+        50% {
+          background-color: yellow;
+          transform: scale(1.1);
+        }
+      }
+
+      .animatedButton {
+        animation: pulseAnimation 2s infinite;
+      }
+    </style>
   </head>
   <body>
-    <h1>Year 9 Cambridge Checkpoint Science Stage 9</h1>
+    <header class="header">
+      Time Management is Pain Management
+    </header>
+    <h1>Year 8 Cambridge Checkpoint Science Stage 8</h1>
+    <div>
+      <button onclick="confirmAction()" class="animatedButton"><strong>Download Year 8 Study Guide</strong></button>
+    </div>
 
-<div>
-    <button onclick="confirmAction()"><strong>Download Study Guide</strong></button>
-</div>
-
-<script>
-function confirmAction() {
-    var confirmation = confirm("Good luck on your exam, you can do it!");
-    if (confirmation == true) {
-        // The user clicked "OK"
-        window.location.href = "https://github.com/JRDittenber/JRDittenber.github.io/raw/main/docs/Year%209%20Study%20Guide.pdf";
-    } else {
-        // The user clicked "Cancel"
-        alert("Keep pushing forward! You've got this!");
-    }
-}
-</script>
-
-
+    <script>
+      function confirmAction() {
+        var confirmation = confirm("Good luck on your exam, you can do it!");
+        if (confirmation == true) {
+          // The user clicked "OK"
+          window.location.href = "https://github.com/JRDittenber/JRDittenber.github.io/raw/main/docs/Year%208%20Study%20Guide.pdf";
+        } else {
+          // The user clicked "Cancel"
+          alert("Keep pushing forward! You've got this!");
+        }
+      }
+    </script>
 
 
 
