@@ -13,9 +13,14 @@
       }
 
       @keyframes pulseAnimation {
-        0% { background-color: #4CAF50; }
-        50% { background-color: yellow; }
-        100% { background-color: #4CAF50; }
+        0%, 100% {
+          background-color: #4CAF50;
+          transform: scale(1);
+        }
+        50% {
+          background-color: yellow;
+          transform: scale(1.1);
+        }
       }
 
       .animatedButton {
