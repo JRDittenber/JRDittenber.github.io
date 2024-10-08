@@ -1,7 +1,7 @@
 /* Set the background color and font color for the whole page */
 body {
-  background-color: #f8f8f8;
-  color: #333333;
+  background-color: #000000; /* Set the background to black */
+  color: #f8f8f8; /* Light text for contrast */
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Set the color and size for all headings */
 h1 {
-  color: #222222;
+  color: #ffffff; /* White heading */
   font-size: 32px;
   margin-top: 20px;
   text-align: center;
@@ -21,7 +21,8 @@ table {
   margin-top: 20px;
   border-collapse: collapse;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow for a sleek effect */
+  background: linear-gradient(to bottom, #333333, #000000); /* Black gradient for the table background */
 }
 
 table caption {
@@ -29,46 +30,42 @@ table caption {
   font-size: 24px;
   margin-bottom: 10px;
   text-align: center;
+  color: #f8f8f8; /* Light color for the caption */
 }
 
 table th,
 table td {
-  border: 1px solid #dddddd;
+  border: 1px solid #555555; /* Darker borders to match the black theme */
   padding: 8px;
   text-align: left;
-  background-color: #f9f9f9;
+  background-color: #1a1a1a; /* Dark background for cells */
+  color: #f8f8f8; /* Light text color */
 }
 
 /* Add color and shadow to table cells on hover */
 table td:hover {
-  background-color: #f2f2f2;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #2a2a2a; /* Slightly lighter shade on hover */
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow effect on hover */
 }
 
 /* Set the color for table headings */
 table th {
-  background-color: #333333;
+  background-color: #444444; /* Dark gray for table headers */
   color: #ffffff;
 }
 
 /* Set the color for table caption */
 table caption {
-  color: #222222;
+  color: #f8f8f8;
 }
 
 /* Set the color for table row headings */
 table th:first-child {
-  background-color: #222222;
+  background-color: #222222; /* Slightly darker for the first column */
   color: #ffffff;
-}
-
-/* Add a gradient background to the table */
-table {
-  background: linear-gradient(to bottom, #f9f9f9, #e9e9e9);
 }
 
 /* Add a border-radius to the table */
 table {
   border-radius: 5px;
 }
-
