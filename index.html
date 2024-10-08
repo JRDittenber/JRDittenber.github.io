@@ -2,12 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>J. Dittenber - Mathematician, Data Scientist and Educator</title>
    <style>
     body {
-      background: linear-gradient(to bottom, #333333, #000000); /* Shiny black gradient */
-      color: #ffffff; /* White font color for contrast */
-      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(to bottom right, #1c1c1c, #000000); /* Sleeker black gradient */
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
       font-size: 16px;
       margin: 0;
       padding: 0;
@@ -15,15 +16,17 @@
 
     /* Set the color and size for all headings */
     h1, h2, h3 {
-      color: #ffffff; /* White headings for contrast */
-      font-size: 32px;
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
     }
 
     /* Style the navigation bar */
     nav {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      padding: 20px;
     }
     nav ul {
       display: flex;
@@ -32,130 +35,153 @@
       margin: 0;
     }
     nav ul li {
-      margin: 0 10px;
+      margin: 0 15px;
     }
     nav ul li a {
-      color: #ffffff; /* Set the desired color for the navigation links */
+      color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       text-transform: uppercase;
-      padding: 10px;
+      padding: 10px 15px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
 
     nav ul li a:hover {
-      background-color: #555555; /* Slight hover effect */
+      background-color: #333333; /* Sleek hover effect */
     }
 
-    /* Style the main content area */
+    /* Main content styling */
     main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow for sleek effect */
-      background-color: #222222; /* Dark background for content */
-      color: #ffffff; /* Light text */
-    }
-
-    /* Style the footer */
-    footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-    footer p {
-      font-size: 14px;
-      color: #cccccc;
-    }
-
-    /* Profile image and buttons container */
-    .top-left {
-      position: absolute;
-      top: 20px;
-      left: 20px;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
+      justify-content: space-between;
+      padding: 40px;
+      margin: 0 auto;
+      max-width: 1200px;
     }
 
-    /* Style the profile image */
+    /* Profile section */
+    .profile-section {
+      flex: 1;
+      text-align: center;
+      margin-right: 40px;
+    }
+
     .profile-image {
-      width: 300px; /* Square size */
-      height: 300px; /* Ensure square shape */
-      transition: transform 0.3s ease;
-      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.7); /* Stronger shadow for 3D effect */
-      background: linear-gradient(to bottom, #555555, #000000); /* Shiny gradient effect */
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+      margin-bottom: 20px;
+      background: url('https://raw.githubusercontent.com/JRDittenber/JRDittenber.github.io/main/18177271.jpeg') no-repeat center center;
+      background-size: cover; /* Ensure the image covers the entire area */
     }
 
-    .profile-image.enlarged {
-      transform: scale(1.1); /* Slight enlargement on click */
-    }
-
-    /* Style the social media icons */
-    .top-left a {
+    /* Social media icons */
+    .social-icons a {
       color: #ffffff;
       text-decoration: none;
+      margin: 0 10px;
+      font-size: 30px;
+      transition: color 0.3s;
     }
 
-    .top-left a i {
-      font-size: 30px; /* Bigger icons */
-      transition: color 0.3s ease;
+    .social-icons a:hover {
+      color: #1a73e8; /* Google blue hover effect */
     }
 
-    .top-left a:hover i {
-      color: #cccccc; /* Change icon color on hover */
+    /* Main content area */
+    .content {
+      flex: 2;
+      background-color: #222222;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Light shadow */
+    }
+
+    .content h2 {
+      font-weight: 600;
+      font-size: 28px;
+      color: #f8f8f8;
+    }
+
+    .content p, .content ul {
+      color: #cccccc;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .content ul {
+      margin-top: 15px;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000000;
+      color: #999999;
+      font-size: 14px;
     }
   </style>
-
-  <script>
-    function toggleImageSize() {
-      const profileImage = document.querySelector('.profile-image');
-      profileImage.classList.toggle('enlarged');
-    }
-  </script>
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <ul>
+        <li><a href="DataScience.html">Data Science Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="DataScience.html">Data Science Portfolio</a></li>        
-        <li><a href="extra.html">Data Science Course Delivery</a></li>
-        <li><a href="discrete_math.html">Generative AI Portfolio</a></li>
-        <li><a href="Calculus1">Teaching and Other Experiences</a></li>
+        <li><a href="extra.html">Extra Classes</a></li>
+        <li><a href="discrete_math.html">Discrete Mathematics SP2023</a></li>
+        <li><a href="Calculus1">Calculus 1 SP2023</a></li>
       </ul>
     </nav>
 
-    <!-- Image and Buttons at Top Left -->
-    <div class="top-left">
-      <img class="profile-image" src="images/Screenshot%202023-02-16%20162903.jpg" alt="Profile Image" onclick="toggleImageSize()">
-      <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/JRDittenber">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://youtube.com/@JDMathematicsAndDataScience">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-
+    <!-- Main content layout -->
     <main>
-      <h1 style="text-align: center;"><strong>J. Dittenber<br> Professor of Mathematics <br>Data Science <br> and AI <br> with an emphasis on machine learning and statistical methods </strong></h1>
-      
-      <h2><strong>Current Students</strong></h2>
-      <p>Find your course information by navigating using the buttons on top of this page.</p>
+      <!-- Profile section -->
+      <div class="profile-section">
+        <div class="profile-image"></div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/JRDittenber">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://youtube.com/@JDMathematicsAndDataScience">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
 
-      <p>Here's a little bit about me:</p>
-      <ul>
-        <li>I love data, mathematics, and trying to understand complex concepts.</li>
-        <li>I enjoy applying statistical analysis to solve real-world problems.</li>
-        <li>I have a passion for teaching and sharing knowledge with others.</li>
-        <li>I believe in continuous learning and staying updated with the latest trends in the field.</li>
-        <li>I believe in high expectations and high support and teaching work ethic above all.</li>
-      </ul>
+      <!-- Content section -->
+      <div class="content">
+        <h1>J. Dittenber</h1>
+        <h2>Professor of Mathematics, Data Science, and AI</h2>
+        <p>With an emphasis on machine learning and statistical methods.</p>
+        
+        <h2>Current Students</h2>
+        <p>Find your course information by navigating using the buttons on top of this page.</p>
+
+        <p>Here's a little bit about me:</p>
+        <ul>
+          <li>I love data, mathematics, and trying to understand complex concepts.</li>
+          <li>I enjoy applying statistical analysis to solve real-world problems.</li>
+          <li>I have a passion for teaching and sharing knowledge with others.</li>
+          <li>I believe in continuous learning and staying updated with the latest trends in the field.</li>
+          <li>I believe in high expectations and high support and teaching work ethic above all.</li>
+        </ul>
+      </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2023 Dittenber Research Associates</p>
     </footer>
