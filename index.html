@@ -2,153 +2,160 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <title>J. Dittenber - Mathematician, Data Scientist and Educator</title>
    <style>
- body {
-  background-color: #1e476f; /* Dark blue background */
-  color: #ffffff; /* White font color */
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-}
+    body {
+      background-color: #1e476f; /* Dark blue background */
+      color: #ffffff; /* White font color */
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Set the color and size for all headings */
+    h1, h2, h3 {
+      color: #222222;
+      font-size: 32px;
+    }
 
+    /* Style the navigation bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #ffffff; /* Set the desired color for the navigation links */
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-      /* Set the color and size for all headings */
-      h1, h2, h3 {
-        color: #222222;
-        font-size: 32px;
-      }
+    nav ul li a:hover {
+      background-color: #eeeeee;
+    }
 
-      /* Style the navigation bar */
-      nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
-      nav ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      nav ul li {
-        margin: 0 10px;
-      }
-      nav ul li a {
-  color: #ffffff; /* Set the desired color for the navigation links */
-  /* Additional CSS properties for styling */
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+    /* Style the main content area */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      color: #333333;
+    }
 
-      
-      nav ul li a:hover {
-        background-color: #eeeeee;
-      }
+    /* Style the footer */
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    footer p {
+      font-size: 14px;
+      color: #999999;
+    }
 
-      /* Style the main content area */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  color: #333333;
-}
+    /* Profile image and buttons container */
+    .top-left {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
 
+    /* Style the profile image */
+    .profile-image {
+      width: 150px; /* Set a fixed size for the image */
+      border-radius: 50%; /* Make the image circular */
+      transition: transform 0.3s ease;
+    }
 
+    .profile-image.enlarged {
+      transform: scale(1.2); /* Slight enlargement on click */
+    }
 
+    /* Style the social media icons */
+    .top-left a {
+      color: #ffffff;
+      text-decoration: none;
+    }
 
+    .top-left a i {
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
 
+    .top-left a:hover i {
+      color: #cccccc; /* Change icon color on hover */
+    }
+  </style>
 
-
-      /* Style the footer */
-      footer {
-        text-align: center;
-        margin-top: 20px;
-      }
-      footer p {
-        font-size: 14px;
-        color: #999999;
-      }
-    </style>
+  <script>
+    function toggleImageSize() {
+      const profileImage = document.querySelector('.profile-image');
+      profileImage.classList.toggle('enlarged');
+    }
+  </script>
   </head>
   <body>
     <nav>
       <ul>
-        
         <li><a href="DataScience.html">Data Science Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="extra.html">Extra Classes</a></li>
         <li><a href="discrete_math.html">Discrete Mathematics SP2023</a></li>
-        <!--<li><a href="college_algebra">College Algebra (All Sections) SP2023</a></li> -->
-        <li><a href="Calculus1">Calculus 1 SP2023 </a></li>
-        <!-- <li><a href="office_hours">Office Hours</a></li> -->
-        
+        <li><a href="Calculus1">Calculus 1 SP2023</a></li>
       </ul>
     </nav>
 
-  <style>
-  .profile-image {
-    width: 80%;
-    transition: transform 0.3s ease;
-  }
+    <!-- Image and Buttons at Top Left -->
+    <div class="top-left">
+      <img class="profile-image" src="images/Screenshot%202023-02-16%20162903.jpg" alt="Profile Image" onclick="toggleImageSize()">
+      <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/JRDittenber">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://youtube.com/@JDMathematicsAndDataScience">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
 
-  .profile-image.enlarged {
-    width: 100%;
-  }
-</style>
+    <main>
+      <h1 style="text-align: center;"><strong>J. Dittenber<br> Professor of Mathematics and Data Scientist</strong></h1>
+      
+      <h2><strong>Current Students</strong></h2>
+      <p>Find your course information by navigating using the buttons on top of this page.</p>
 
-<script>
-  function toggleImageSize() {
-    const profileImage = document.querySelector('.profile-image');
-    profileImage.classList.toggle('enlarged');
-  }
-</script>
-
-<main>
-  <h1 style="text-align: center;"><strong>J. Dittenber<br> Professor of Mathematics and Data Scientist</h1>
-
-
- <div style="text-align: center;">
-  <img class="profile-image" src="images/Screenshot%202023-02-16%20162903.jpg" alt="Profile Image" onclick="toggleImageSize()">
-</div>
-
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
-    <i class="fab fa-linkedin fa-2x"></i> <!-- Font Awesome LinkedIn icon -->
-  </a>
-  <a href="https://github.com/JRDittenber">
-    <i class="fab fa-github fa-2x"></i> <!-- Font Awesome GitHub icon -->
-  </a>
-  <a href="https://youtube.com/@JDMathematicsAndDataScience">
-    <i class="fab fa-youtube fa-2x"></i> <!-- Font Awesome YouTube icon -->
-  </a>
-</div>
-   
-    <h2> <strong> Current Students </h2>
-      <p> Find your course information by navigating using the buttons on top of this page. </p>
-
-    
-
-  <p>Here's a little bit about me:</p>
-  <ul>
-    <li>I love data, mathematics, and trying to understand complex concepts.</li>
-    <li>I enjoy applying statistical analysis to solve real-world problems.</li>
-    <li>I have a passion for teaching and sharing knowledge with others.</li>
-    <li>I believe in continuous learning and staying updated with the latest trends in the field.</li>
-    <li>I believe in high expectations and high support and teaching work ethic above all.</li>
-  </ul>
-</main>
-
+      <p>Here's a little bit about me:</p>
+      <ul>
+        <li>I love data, mathematics, and trying to understand complex concepts.</li>
+        <li>I enjoy applying statistical analysis to solve real-world problems.</li>
+        <li>I have a passion for teaching and sharing knowledge with others.</li>
+        <li>I believe in continuous learning and staying updated with the latest trends in the field.</li>
+        <li>I believe in high expectations and high support and teaching work ethic above all.</li>
+      </ul>
+    </main>
 
     <footer>
       <p>&copy; 2023 Dittenber Research Associates</p>
-    </footer> 
+    </footer>
   </body>
 </html>
