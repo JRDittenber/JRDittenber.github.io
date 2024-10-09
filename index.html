@@ -70,15 +70,16 @@
         margin-right: 40px;
       }
 
-     .profile-image {
-  width: 220px; /* Keeping the reduced size */
-  height: 220px;
+.profile-image {
+  width: 220px; /* Adjust the width */
+  height: 220px; /* Adjust the height */
   border-radius: 10px;
-  background: url('/path/to/your/image.png') no-repeat top center, #333; /* Ensure it is positioned from the top */
-  background-size: contain; /* Make sure the entire image fits without cropping */
+  background: url('/path/to/your/image.png') no-repeat center center, #333; /* Ensure correct path */
+  background-size: cover; /* Make sure the image covers the area without distortion */
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
   margin-bottom: 20px;
 }
+
 
 
 
