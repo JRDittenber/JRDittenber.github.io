@@ -1,201 +1,194 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>J. Dittenber - Mathematician, Data Scientist and Educator</title>
-    <style>
-      body {
-        background: linear-gradient(to bottom right, #1c1c1c, #000000); /* Sleeker black gradient */
-        color: #ffffff;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>J. Dittenber - Mathematician, Data Scientist and Educator</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #1c1c1c, #000000); /* Sleeker black gradient */
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
 
-      /* Set the color and size for all headings */
-      h1, h2, h3 {
-        color: #ffffff;
-        font-size: 36px;
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
+    /* Set the color and size for all headings */
+    h1, h2, h3 {
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
 
-      /* Style the navigation bar */
-      nav {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-      }
+    /* Style the navigation bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
 
-      nav ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-      nav ul li {
-        margin: 0 15px;
-      }
+    nav ul li {
+      margin: 0 15px;
+    }
 
-      nav ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 10px 15px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
 
-      nav ul li a:hover {
-        background-color: #333333; /* Sleek hover effect */
-      }
+    nav ul li a:hover {
+      background-color: #333333; /* Sleek hover effect */
+    }
 
-      /* Main content styling */
-      main {
-        display: flex;
-        justify-content: space-between;
-        padding: 40px;
-        margin: 0 auto;
-        max-width: 1200px;
-      }
+    /* Main content styling */
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
 
-      /* Profile section */
-      .profile-section {
-        flex: 1;
-        text-align: left; /* Aligns everything to the left */
-        margin-right: 40px;
-      }
+    /* Profile section */
+    .profile-section {
+      flex: 1;
+      text-align: left; /* Aligns everything to the left */
+      margin-right: 40px;
+    }
 
-.profile-image {
-  width: 300px; /* Slightly larger size */
-  height: 300px;
-  border-radius: 20px;
-  background: url('images/407233865_7321787244511364_4312113822423168905_n.jpg') no-repeat center center; /* Correct image path */
-  background-size: cover; /* Ensure the image covers the entire area */
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
-  margin-bottom: 20px;
-}
+    .profile-image {
+      width: 300px; /* Slightly larger size */
+      height: 300px;
+      border-radius: 20px;
+      background: url('images/407233865_7321787244511364_4312113822423168905_n.jpg') no-repeat center center; /* Correct image path */
+      background-size: cover; /* Ensure the image covers the entire area */
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+      margin-bottom: 20px;
+    }
 
+    /* Social media icons */
+    .social-icons {
+      display: flex;
+      justify-content: flex-start; /* Align icons to the left */
+      gap: 10px; /* Adds space between the icons */
+    }
 
+    .social-icons a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 30px;
+      transition: color 0.3s;
+    }
 
+    .social-icons a:hover {
+      color: #1a73e8; /* Google blue hover effect */
+    }
 
+    /* Main content area */
+    .content {
+      flex: 2;
+      background-color: #222222;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Light shadow */
+    }
 
+    .content h2 {
+      font-weight: 600;
+      font-size: 28px;
+      color: #f8f8f8;
+    }
 
-      /* Social media icons */
-      .social-icons {
-        display: flex;
-        justify-content: flex-start; /* Align icons to the left */
-        gap: 10px; /* Adds space between the icons */
-      }
+    .content p, .content ul {
+      color: #cccccc;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-      .social-icons a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 30px;
-        transition: color 0.3s;
-      }
+    .content ul {
+      margin-top: 15px;
+    }
 
-      .social-icons a:hover {
-        color: #1a73e8; /* Google blue hover effect */
-      }
+    .content ul li {
+      margin-bottom: 10px;
+    }
 
-      /* Main content area */
-      .content {
-        flex: 2;
-        background-color: #222222;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Light shadow */
-      }
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000000;
+      color: #999999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="DataScience.html">Data Science Portfolio</a></li>
+      <li><a href="extra.html">Teaching</a></li>
+      <li><a href="data_trainer.html">Data Science Training</a></li>
+      <li><a href="GenAI.html">Generative AI</a></li>
+      <li><a href="https://rpubs.com/JDittenber_" target="_blank">Rpubs</a></li> <!-- Added Rpubs link -->
+    </ul>
+  </nav>
 
-      .content h2 {
-        font-weight: 600;
-        font-size: 28px;
-        color: #f8f8f8;
-      }
+  <!-- Main content layout -->
+  <main>
+    <!-- Profile section -->
+    <div class="profile-section">
+      <div class="profile-image"></div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/JRDittenber">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://youtube.com/@JDMathematicsAndDataScience">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
 
-      .content p, .content ul {
-        color: #cccccc;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 1.6;
-      }
+    <!-- Content section -->
+    <div class="content">
+      <h1>J. Dittenber</h1>
+      <h2>Professor of Mathematics,<br> Data Science,<br> and Machine Learning</h2>
 
-      .content ul {
-        margin-top: 15px;
-      }
-
-      .content ul li {
-        margin-bottom: 10px;
-      }
-
-      /* Footer */
-      footer {
-        text-align: center;
-        margin-top: 40px;
-        padding: 20px;
-        background-color: #000000;
-        color: #999999;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav>
+      <p>Here's a little bit about me:</p>
       <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="DataScience.html">Data Science Portfolio</a></li>
-        <li><a href="extra.html">Teaching</a></li>
-        <li><a href="data_trainer.html">Data Science Training</a></li>
-        <li><a href="GenAI.html">Generative AI</a></li>
+        <li>I have a deep passion for mathematics, data science, and machine learning, with a particular focus on the theoretical foundations behind these fields.</li>
+        <li>I love applying statistical methods to solve complex, real-world problems, blending rigorous mathematical theory with practical solutions.</li>
+        <li>Teaching is one of my greatest passions. I enjoy guiding others through challenging concepts and helping them discover the elegance of mathematics and how it is used with programming to allow data to tell its story.</li>
+        <li>I am committed to continuous learning, always staying updated with the latest trends and breakthroughs in the fields of data science and machine learning.</li>
+        <li>I strongly believe in fostering a high-expectation, high-support environment where students can develop both their knowledge and work ethic.</li>
       </ul>
-    </nav>
+    </div>
+  </main>
 
-    <!-- Main content layout -->
-    <main>
-      <!-- Profile section -->
-      <div class="profile-section">
-        <div class="profile-image"></div>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/JRDittenber">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://youtube.com/@JDMathematicsAndDataScience">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Content section -->
-      <div class="content">
-        <h1>J. Dittenber</h1>
-        <h2>Professor of Mathematics,<br> Data Science,<br> and Machine Learning</h2>
-       
-        
-       
-
-        <p>Here's a little bit about me:</p>
-        <ul>
-          <li>I have a deep passion for mathematics, data science, and machine learning, with a particular focus on the theoretical foundations behind these fields.</li>
-          <li>I love applying statistical methods to solve complex, real-world problems, blending rigorous mathematical theory with practical solutions.</li>
-          <li>Teaching is one of my greatest passions. I enjoy guiding others through challenging concepts and helping them discover the elegance of mathematics and how it is used with programming to allow data to tell its story.</li>
-          <li>I am committed to continuous learning, always staying updated with the latest trends and breakthroughs in the fields of data science and machine learning.</li>
-          <li>I strongly believe in fostering a high-expectation, high-support environment where students can develop both their knowledge and work ethic.</li>
-        </ul>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2023 Dittenber Research Associates</p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Dittenber Research Associates</p>
+  </footer>
+</body>
 </html>
