@@ -1,25 +1,26 @@
-html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffery Dittenber's CV</title>
+    <title>Jeffery Dittenber's Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif;
             margin: 40px;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #000000;
         }
         h1, h2 {
-            color: #333;
+            text-align: center;
         }
         .section {
             margin-bottom: 30px;
         }
         .section-title {
             font-size: 1.5em;
+            border-bottom: 1px solid #000;
             margin-bottom: 15px;
         }
         .item-title {
@@ -31,101 +32,156 @@ html_content = """
         .item span {
             display: block;
         }
+        .contact-info {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .clearfix {
+            clear: both;
+        }
     </style>
 </head>
 <body>
 
     <h1>Jeffery Dittenber</h1>
-    <p>Email: <a href="mailto:jeff.dittenber@hotmail.com">jeff.dittenber@hotmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/passionformath" target="_blank">linkedin.com/in/passionformath</a></p>
-    <p>Phone: +1 405 953 3875</p>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:jeff.dittenber@hotmail.com">jeff.dittenber@hotmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/passionformath" target="_blank">linkedin.com/in/passionformath</a></p>
+        <p>Phone: +1 405 953 3875</p>
+    </div>
 
     <div class="section">
         <h2 class="section-title">Education</h2>
         <div class="item">
-            <span class="item-title">Master of Science in Mathematics</span>
-            <span>Shawnee State University, 2020 - 2022</span>
+            <span class="left"><strong>Master of Science in Mathematics</strong>, Shawnee State University</span>
+            <span class="right">2020 -- 2022</span>
+            <div class="clearfix"></div>
         </div>
         <div class="item">
-            <span class="item-title">Master of Science in Applied Statistics</span>
-            <span>University of Oklahoma, Currently in Progress!</span>
+            <span class="left"><strong>Master of Science in Applied Statistics</strong>, University of Oklahoma</span>
+            <span class="right">Expected August 2024</span>
+            <div class="clearfix"></div>
         </div>
         <div class="item">
-            <span class="item-title">Bachelor of Science in Mathematics</span>
-            <span>University of Oklahoma, 2011 - 2017</span>
+            <span class="left"><strong>Bachelor of Science in Mathematics</strong>, University of Oklahoma</span>
+            <span class="right">2011 -- 2017</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="item">
+            <span class="left"><strong>Professional Certificate in Data Science and Business Analytics</strong>, University of Maryland</span>
+            <span class="right">April 2022 -- January 2023</span>
+            <div class="clearfix"></div>
         </div>
     </div>
 
     <div class="section">
         <h2 class="section-title">Certifications</h2>
         <div class="item">
-            <span>University of Maryland, Robert H. Smith School of Business Professional Certificate in Data Science and Business Analysis</span>
             <span>edX Verified Certificate for Data Science: Machine Learning, June 2022</span>
             <span>Supervised Learning with scikit-learn, DataCamp, August 2022</span>
             <span>Unsupervised Learning in Python, DataCamp, August 2022</span>
-            <!-- Add more certifications here -->
+            <span>Data Manipulation with dplyr, DataCamp, April 2022</span>
         </div>
     </div>
 
     <div class="section">
         <h2 class="section-title">Key Skills</h2>
         <div class="item">
-            <span>Python, R, MLOps, AWS</span>
-            <span>Tableau, SQL, TensorFlow, PyTorch</span>
-            <span>Machine Learning, Deep Learning, NLP, Statistics</span>
+            <span>Programming: Python, R, SQL, Java</span>
+            <span>Machine Learning: TensorFlow, PyTorch, Keras, scikit-learn</span>
+            <span>Cloud Platforms: AWS, Microsoft Azure</span>
+            <span>Data Analysis and Visualization: Tableau, PowerBI</span>
+            <span>Data Engineering: Apache Spark, Hadoop, Docker</span>
+            <span>Natural Language Processing (NLP): Generative AI, GPT/Transformers</span>
         </div>
     </div>
 
     <div class="section">
         <h2 class="section-title">Work Experience</h2>
         <div class="item">
-            <span class="item-title">Mathematics Professor</span>
-            <span>Rose State College, August 2023 - Present</span>
+            <span class="left"><strong>Mathematics Professor</strong>, Rose State College</span>
+            <span class="right">August 2023 -- Present</span>
+            <div class="clearfix"></div>
         </div>
         <div class="item">
-            <span class="item-title">Data Science Trainer</span>
-            <span>Careerera, 2022 - 2024</span>
+            <span class="left"><strong>Data Science Trainer</strong>, Careerera</span>
+            <span class="right">October 2022 -- April 2024</span>
+            <div class="clearfix"></div>
         </div>
         <div class="item">
-            <span class="item-title">Data Scientist</span>
-            <span>iNeuron.ai, 2022 - 2023</span>
+            <span class="left"><strong>AP Calculus AB/BC & Statistics Instructor (Remote)</strong>, American Straight A Academy</span>
+            <span class="right">March 2020 -- November 2021</span>
+            <div class="clearfix"></div>
         </div>
         <div class="item">
-            <span class="item-title">Remote AP Calculus & Statistics Instructor</span>
-            <span>American Straight A Academy, 2020 - 2021</span>
+            <span class="left"><strong>Mathematics Teacher</strong>, Benchama Maharat High School, Thailand</span>
+            <span class="right">July 2020 -- March 2022</span>
+            <div class="clearfix"></div>
         </div>
-        <!-- Add more work experience here -->
+        <div class="item">
+            <span class="left"><strong>Mathematics Teacher</strong>, Harbin No.3 High School, China</span>
+            <span class="right">August 2019 -- March 2020</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="item">
+            <span class="left"><strong>Mathematics Teacher</strong>, Western Heights Public Schools, USA</span>
+            <span class="right">August 2018 -- May 2019</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="item">
+            <span class="left"><strong>Adjunct Professor of Developmental Mathematics</strong>, Oklahoma City Community College</span>
+            <span class="right">July 2017 -- March 2019</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="item">
+            <span class="left"><strong>Calculus and Pre-Calculus Instructor</strong>, University of Oklahoma</span>
+            <span class="right">June 2014 -- August 2016</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="item">
+            <span class="left"><strong>Private Mathematics Tutor</strong>, Self-Employed</span>
+            <span class="right">August 2011 -- Present</span>
+            <div class="clearfix"></div>
+        </div>
     </div>
 
     <div class="section">
         <h2 class="section-title">Projects</h2>
         <div class="item">
-            <span class="item-title">Telecom Churn Analysis and Prediction</span>
-            <span>Machine learning and deep learning project analyzing telecom records to predict customer churn.</span>
+            <span><strong>Telecom Churn Analysis and Prediction</strong></span>
+            <span>Applied machine learning and deep learning models to predict customer churn based on a dataset of 99k records.</span>
         </div>
         <div class="item">
-            <span class="item-title">Sentiment Analysis</span>
-            <span>NLP project classifying movie reviews using machine learning and deep learning models.</span>
+            <span><strong>Sentiment Analysis of Movie Reviews</strong></span>
+            <span>Built NLP models using tokenization, stop-word removal, and ensemble models to classify movie reviews.</span>
         </div>
-        <!-- Add more projects here -->
+        <div class="item">
+            <span><strong>Hospital Ratings Predictions</strong></span>
+            <span>Predicted hospital ratings based on 93 features using logistic regression and random forest models.</span>
+        </div>
     </div>
 
     <div class="section">
         <h2 class="section-title">Awards & Publications</h2>
         <div class="item">
-            <span class="item-title">Gamel Family Endowed Scholarship</span>
+            <span><strong>Gamel Family Endowed Scholarship</strong>, Oklahoma City Community College</span>
         </div>
         <div class="item">
-            <span class="item-title">Faculty Association Scholarship</span>
+            <span><strong>Faculty Association Scholarship</strong>, Oklahoma City Community College</span>
         </div>
         <div class="item">
-            <span class="item-title">Publication: Predicting Success on the NCLEX-RN for Associate Degree Nursing Students</span>
-            <span><a href="https://digitalcommons.shawnee.edu/math_etd/29/" target="_blank">Read the publication</a></span>
+            <span><strong>Publication</strong>: Predicting Success on the NCLEX-RN for Associate Degree Nursing Students</span>
+            <span><a href="https://digitalcommons.shawnee.edu/math_etd/29" target="_blank">Read the publication</a></span>
         </div>
-        <!-- Add more awards/publications here -->
     </div>
 
 </body>
 </html>
-"""
 
