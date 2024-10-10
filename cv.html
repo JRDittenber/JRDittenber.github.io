@@ -1,0 +1,132 @@
+# Creating the HTML for Jeffery Dittenber's CV to be used in his GitHub.io page
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffery Dittenber's CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .item-title {
+            font-weight: bold;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .item span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jeffery Dittenber</h1>
+    <p>Email: <a href="mailto:jeff.dittenber@hotmail.com">jeff.dittenber@hotmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/passionformath" target="_blank">linkedin.com/in/passionformath</a></p>
+    <p>Phone: +1 405 953 3875</p>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="item">
+            <span class="item-title">Master of Science in Mathematics</span>
+            <span>Shawnee State University, 2020 - 2022</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Master of Science in Applied Statistics</span>
+            <span>University of Oklahoma, Expected August 2024</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Bachelor of Science in Mathematics</span>
+            <span>University of Oklahoma, 2011 - 2017</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="item">
+            <span>edX Verified Certificate for Data Science: Machine Learning, June 2022</span>
+            <span>Supervised Learning with scikit-learn, DataCamp, August 2022</span>
+            <span>Unsupervised Learning in Python, DataCamp, August 2022</span>
+            <!-- Add more certifications here -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Key Skills</h2>
+        <div class="item">
+            <span>Python, R, MLOps, AWS</span>
+            <span>Tableau, SQL, TensorFlow, PyTorch</span>
+            <span>Machine Learning, Deep Learning, NLP, Statistics</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="item">
+            <span class="item-title">Mathematics Professor</span>
+            <span>Rose State College, August 2023 - Present</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Data Science Trainer</span>
+            <span>Careerera, 2022 - 2024</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Data Scientist</span>
+            <span>iNeuron.ai, 2022 - 2023</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Remote AP Calculus & Statistics Instructor</span>
+            <span>American Straight A Academy, 2020 - 2021</span>
+        </div>
+        <!-- Add more work experience here -->
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="item">
+            <span class="item-title">Telecom Churn Analysis and Prediction</span>
+            <span>Machine learning and deep learning project analyzing telecom records to predict customer churn.</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Sentiment Analysis</span>
+            <span>NLP project classifying movie reviews using machine learning and deep learning models.</span>
+        </div>
+        <!-- Add more projects here -->
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Awards & Publications</h2>
+        <div class="item">
+            <span class="item-title">Gamel Family Endowed Scholarship</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Faculty Association Scholarship</span>
+        </div>
+        <div class="item">
+            <span class="item-title">Publication: Predicting Success on the NCLEX-RN for Associate Degree Nursing Students</span>
+            <span><a href="https://digitalcommons.shawnee.edu/math_etd/29/" target="_blank">Read the publication</a></span>
+        </div>
+        <!-- Add more awards/publications here -->
+    </div>
+
+</body>
+</html>
+"""
+
