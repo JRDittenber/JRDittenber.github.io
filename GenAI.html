@@ -7,6 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
         }
 
         h1 {
@@ -14,7 +16,8 @@
         }
 
         h2 {
-            margin-top: 30px;
+            margin-top: 40px;
+            text-align: center;
         }
 
         .section {
@@ -37,6 +40,20 @@
             max-width: 720px;
             height: 405px;
         }
+
+        .description {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
     </style>
 </head>
 
@@ -50,6 +67,32 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
+    </div>
+
+    <div class="description">
+        <h2>Retrieval-Augmented Generation (RAG) App Overview</h2>
+        <p>This project implements a simple Retrieval-Augmented Generation (RAG) system using the following stack:</p>
+        <ul>
+            <li><strong>LangChain</strong> for orchestration</li>
+            <li><strong>Pinecone</strong> for vector storage</li>
+            <li><strong>HuggingFace Transformers</strong> for embeddings</li>
+            <li><strong>Streamlit</strong> for the front-end interface</li>
+            <li><strong>Ollama</strong> for running a local LLaMA 3 model</li>
+        </ul>
+        <p>It allows users to query a document collection (e.g., IRB policies and procedures) using natural language and receive context-aware responses from a local language model served through Ollama.</p>
+
+        <h3>Folder Structure</h3>
+        <pre>
+rag_project/
+├── .env                    # Environment variables (e.g., Pinecone keys)
+├── app.py                  # Main Streamlit app that ties everything together
+├── logger.py               # Custom logging logic
+├── exceptions.py           # Custom exception handling
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── ingestion.py            # Logic for document loading and embedding
+├── query.py                # Logic for answering user queries
+        </pre>
     </div>
 </body>
 
