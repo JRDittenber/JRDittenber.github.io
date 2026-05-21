@@ -3,10 +3,10 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <title>J. Dittenber - Mathematician, Data Scientist and Educator</title>
+  <title>J. Dittenber - Mathematics, Applied Statistics, and Quantitative Research</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #1c1c1c, #000000); /* Sleeker black gradient */
+      background: linear-gradient(to bottom right, #1c1c1c, #000000);
       color: #ffffff;
       font-family: 'Poppins', sans-serif;
       font-size: 16px;
@@ -14,15 +14,26 @@
       padding: 0;
     }
 
-    /* Set the color and size for all headings */
     h1, h2, h3 {
       color: #ffffff;
-      font-size: 36px;
       font-weight: 600;
       margin-bottom: 20px;
     }
 
-    /* Style the navigation bar */
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 26px;
+      line-height: 1.35;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
     nav {
       display: flex;
       justify-content: center;
@@ -34,6 +45,8 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav ul li {
@@ -51,10 +64,9 @@
     }
 
     nav ul li a:hover {
-      background-color: #333333; /* Sleek hover effect */
+      background-color: #333333;
     }
 
-    /* Main content styling */
     main {
       display: flex;
       justify-content: space-between;
@@ -63,54 +75,55 @@
       max-width: 1200px;
     }
 
-    /* Profile section */
     .profile-section {
       flex: 1;
-      text-align: left; /* Aligns everything to the left */
+      text-align: left;
       margin-right: 40px;
     }
 
     .profile-image {
-      width: 300px; /* Slightly larger size */
+      width: 300px;
       height: 300px;
       border-radius: 20px;
-      background: url('images/1777698471008.jpg') no-repeat center center; /* Correct image path */
-      background-size: cover; /* Ensure the image covers the entire area */
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+      background: url('images/1777698471008.jpg') no-repeat center center;
+      background-size: cover;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
       margin-bottom: 20px;
     }
 
-    /* Social media icons */
     .social-icons {
       display: flex;
-      justify-content: flex-start; /* Align icons to the left */
-      gap: 10px; /* Adds space between the icons */
+      justify-content: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .social-icons a {
       color: #ffffff;
       text-decoration: none;
-      font-size: 30px;
+      font-size: 28px;
       transition: color 0.3s;
+      font-weight: 600;
     }
 
     .social-icons a:hover {
-      color: #1a73e8; /* Google blue hover effect */
+      color: #1a73e8;
     }
 
-    /* Main content area */
+    .text-link {
+      font-size: 18px !important;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      padding: 4px 8px;
+    }
+
     .content {
       flex: 2;
       background-color: #222222;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Light shadow */
-    }
-
-    .content h2 {
-      font-weight: 600;
-      font-size: 28px;
-      color: #f8f8f8;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
 
     .content p, .content ul {
@@ -122,13 +135,18 @@
 
     .content ul {
       margin-top: 15px;
+      padding-left: 22px;
     }
 
     .content ul li {
       margin-bottom: 10px;
     }
 
-    /* Footer */
+    .highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -137,10 +155,35 @@
       color: #999999;
       font-size: 14px;
     }
+
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        padding: 24px;
+      }
+
+      .profile-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .profile-image {
+        width: 250px;
+        height: 250px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 23px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="contact.html">Contact</a></li>
@@ -148,57 +191,94 @@
       <li><a href="extra.html">Teaching</a></li>
       <li><a href="data_trainer.html">Data Science Training</a></li>
       <li><a href="GenAI.html">Generative AI</a></li>
-     <!-- <li><a href="cv.html">CV</a></li> -->
-      
+      <!-- <li><a href="cv.html">CV</a></li> -->
     </ul>
   </nav>
 
-  <!-- Main content layout -->
   <main>
-    <!-- Profile section -->
     <div class="profile-section">
       <div class="profile-image"></div>
-  <div class="social-icons">
-  <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://github.com/JRDittenber">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://youtube.com/@JDMathematicsAndDataScience">
-    <i class="fab fa-youtube"></i>
-  </a>
-  <a href="https://rpubs.com/JDittenber_" target="_blank">
-    RPubs
-  </a>
-  <a href="https://jdittenber.shinyapps.io/piecewise_regression/" target="_blank">
-    Shiny
-  </a>
-</div>
 
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/passionformath?trk=profile-badge" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/JRDittenber" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://youtube.com/@JDMathematicsAndDataScience" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a class="text-link" href="https://rpubs.com/JDittenber_" target="_blank">
+          RPubs
+        </a>
+
+        <a class="text-link" href="https://jdittenber.shinyapps.io/piecewise_regression/" target="_blank">
+          Shiny
+        </a>
+      </div>
     </div>
 
-    <!-- Content section -->
     <div class="content">
       <h1>J. Dittenber</h1>
-      <h2>Professor of Mathematics,<br> Data Science,<br> and Machine Learning</h2>
 
-      <p>Here's a little bit about me:</p>
+      <h2>
+        Mathematics Professor<br>
+        Applied Statistics<br>
+        Quantitative Research<br>
+        Machine Learning
+      </h2>
+
+      <p>
+        I am a mathematics professor with a <span class="highlight">B.S. and M.S. in Mathematics</span> and an
+        <span class="highlight">M.S. in Applied Statistics from the University of Oklahoma</span>. I have also been accepted into the
+        <span class="highlight">Research, Evaluation, Statistics, and Assessment Ph.D. program at the University of Southern Mississippi</span>.
+      </p>
+
+      <p>
+        My work sits at the intersection of teaching, learning, student success, quantitative methods,
+        applied research, statistical modeling, machine learning, and clear communication of data-driven results.
+      </p>
+
+      <h3>Professional Focus</h3>
+
       <ul>
-        <li>I have a deep passion for mathematics, data science, and machine learning, with a particular focus on the theoretical foundations behind these fields.</li>
-        <li>I love applying statistical methods to solve complex, real-world problems, blending rigorous mathematical theory with practical solutions.</li>
-        <li>Teaching is one of my greatest passions. I enjoy guiding others through challenging concepts and helping them discover the elegance of mathematics and how it is used with programming to allow data to tell its story.</li>
-        <li>I am committed to continuous learning, always staying updated with the latest trends and breakthroughs in the fields of data science and machine learning.</li>
-        <li>I strongly believe in fostering a high-expectation, high-support environment where students can develop both their knowledge and work ethic.</li>
+        <li>
+          I am interested in how people learn mathematics, statistics, programming, and data science, especially when difficult ideas can be made clearer through careful explanation, visualization, and structured practice.
+        </li>
+
+        <li>
+          I enjoy applying statistical methods to real-world problems, with an emphasis on rigorous reasoning, ethical interpretation, reproducible workflows, and useful communication.
+        </li>
+
+        <li>
+          My current project work focuses on applied statistics, machine learning, educational data analysis, research design, model interpretation, dashboards, and production-aware data science workflows.
+        </li>
+
+        <li>
+          I am especially interested in projects where mathematical reasoning, applied statistics, machine learning, and data storytelling can help people and organizations make better decisions.
+        </li>
+
+        <li>
+          As an educator, I believe in a high-expectation, high-support environment where students develop technical knowledge, confidence, discipline, and independent problem-solving ability.
+        </li>
       </ul>
 
+      <h3>Current Direction</h3>
 
+      <p>
+        I am building a professional body of work that connects mathematics education, applied statistics,
+        quantitative research, machine learning, and practical AI/ML systems. My strongest direction is work that combines
+        rigorous analysis, clear explanation, human learning, applied modeling, and decision support.
+      </p>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2023 Dittenber Research Associates</p>
+    <p>&copy; 2026 J. Dittenber</p>
   </footer>
 </body>
 </html>
